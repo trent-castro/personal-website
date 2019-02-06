@@ -1,6 +1,6 @@
-function populateFooter() {
-    var footerContent = document.getElementById("footerContent");
-    
+var footerContent = document.getElementById("footerContent");
+
+function populateFooter() {    
     footerContent.innerHTML =
         '<p>' +
         '&copy; Trent Castro 2019 ' +
