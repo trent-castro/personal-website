@@ -1,7 +1,7 @@
 var headerContent = document.getElementById("headerContent");
 
 var links = [
-    ["index.html", "Home"],
+    ["index.html", "Home"], // Always first
     ["games.html", "Games"],
     ["musician.html", "Music"],
     ["art.html", "Art"],
@@ -29,7 +29,9 @@ function populateNavigationBar() {
         }
 
         // If the current page is being created, mark as an active page
-        if(window.location.href.indexOf(link[0]) > -1) {
+        // If connecting to the .com, mark home as active page
+        if(window.location.href.indexOf(link[0]) > -1
+            || (window.location.href.indexOf(".html") == -1 && x == 0)) {
             navigationBar += ' class="activePage"';
         }
 
