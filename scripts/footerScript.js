@@ -1,5 +1,6 @@
 var footerContent = document.getElementById("footerContent");
 
+/*
 function populateFooter() {    
     footerContent.innerHTML =
         '<p>' +
@@ -12,3 +13,5 @@ function populateFooter() {
 }
 
 populateFooter();
+
+*/
